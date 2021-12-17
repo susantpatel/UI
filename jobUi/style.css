@@ -1,0 +1,154 @@
+.flexbox-wrapper {
+  position: sticky;
+  top: 0;
+  margin-left: 50%;
+  transform: translateX(-300px);
+}
+
+#input-Field {
+  position: sticky;
+  height: 50px;
+  width: 500px;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 40px;
+  border: 2px solid green;
+  outline: none;
+}
+
+#input-Field:focus {
+  border: 2px solid rgb(158, 54, 111);
+}
+
+.button_enter {
+  font-size: 30px;
+  border: 0;
+  background: rgb(174, 204, 115);
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  color: antiquewhite;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.button_gif {
+  font-size: 30px;
+  border: 0;
+  background: rgb(174, 204, 115);
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  color: antiquewhite;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.button_gif:hover {
+  cursor: pointer;
+  transition: background 0.5s;
+  background: rgb(171, 240, 35);
+}
+
+.button_enter:hover {
+  cursor: pointer;
+  transition: background 0.5s;
+  background: rgb(171, 240, 35);
+}
+
+.userEntered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  height: 500px;
+  width: 400px;
+  padding: 5px;
+  border: 1px solid #888;
+}
+
+.close {
+  align-self: flex-end;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.gifbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: scroll;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+  scrollbar-width: none;
+}
+
+.gifbox::-webkit-scrollbar {
+  display: none;
+}
+
+.gifBoxLoading {
+  font-size: 20px;
+}
+
+.gifinputsearchbutton {
+  margin-top: 2px;
+}
+
+.gifinputsearchbutton:hover {
+  cursor: pointer;
+}
+
+.gifSearchInput:focus {
+  outline: none;
+}
+
+.gifboximage {
+  margin: 5px;
+}
+
+.gifboximage:hover {
+  cursor: pointer;
+  transform: translatey(-4px);
+}
+
+.arrow {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 75px;
+  right: 414px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.paraText {
+  font-size: 40px;
+  margin: 1px;
+}
